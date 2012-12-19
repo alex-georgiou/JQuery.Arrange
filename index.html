@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>JQuery.arrange test harness</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.arrange.js" charset="utf-8"></script>
+		<style>
+			div { border: 1px solid black; }
+		</style>
+	</head>
+	<body>
+		<div id="container" style="width: 600px; height: 300px;">
+			<div id="A" class="avoid"	style="width: 150px;	height: 50px;" >A</div>
+			<div id="B"					style="width: 100px;	height: 50px;" >B</div>
+			<div id="C" class="arrange"	style="width: 50px;		height: 75px;" >C</div>
+			<div id="D" class="arrange"	style="width: 20px;		height: 200px;">D</div>
+			<div id="E" class="arrange"	style="width: 100px;	height: 200px;">E</div>
+			<div id="F"					style="width: 20px;		height: 18px;" >F</div>
+			<div id="G" class="arrange"	style="width: 40px;		height: 120px;">G</div>
+		</div>
+		<a href="javascript:$('#container').arrange({slack: 30, avoid: '.avoid', arrange: '.arrange'})">arrange C, D, E, and G, while avoiding A and ignoring B and F, and with 30 pixels slack</a>
+	</body>
+</html>
