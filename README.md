@@ -1,7 +1,7 @@
 # JQuery.Arrange
 
 ## demo:
-Check out [`index.html`](https://github.com/alex-georgiou/JQuery.Arrange/blob/master/index.html index.html) to see it in action
+Check out [`index.html`](https://github.com/alex-georgiou/JQuery.Arrange/blob/master/index.html) to see it in action
 
 ## usage:
 run on a container to arrange its children in random positions within the container 
